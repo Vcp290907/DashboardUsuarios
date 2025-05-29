@@ -1,3 +1,7 @@
+import { faker } from '@faker-js/faker';
+import lodash from 'lodash';
+import fs from 'fs';
+
 const peoples = lodash.times(50, function (n) {
     const firstName = faker.person.firstName();
     const lastName = faker.person.lastName();
@@ -13,7 +17,7 @@ const peoples = lodash.times(50, function (n) {
 
 const data = {};
 data.peoples = peoples;
-FileSystem.writeFile('db.json', JSON.stringify(data), (err) => {
+fs.writeFile('db.json', JSON.stringify(data), (err) => {
     if(err) throw err;
     console.log('A tamo ai!');
 })
