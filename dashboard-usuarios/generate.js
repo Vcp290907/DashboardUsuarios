@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 import lodash from 'lodash';
 import fs from 'fs';
 
-const peoples = lodash.times(50, function (n) {
+const peoples = lodash.times(150, function (n) {
     const firstName = faker.person.firstName();
     const lastName = faker.person.lastName();
     return {
