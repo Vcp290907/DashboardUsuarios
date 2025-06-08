@@ -39,7 +39,7 @@ function App() {
                   <UserCard key={user.id} user={user} />
                 ))}
               </div>
-              <div className="pagination">
+              <div className="paginacao">
                 <button onClick={paginaAnterior} disabled={paginaAtual === 1}>
                   Página anterior
                 </button>

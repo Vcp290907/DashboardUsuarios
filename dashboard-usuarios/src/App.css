@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.pagination {
+.paginacao {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -19,7 +19,7 @@
   margin-top: 20px;
 }
 
-.pagination button {
+.paginacao button {
   padding: 8px 12px;
   border: none;
   background: #eee;
@@ -29,12 +29,12 @@
   color: black;
 }
 
-.pagination button.active {
+.paginacao button.active {
   background: #007bff;
   color: #fff;
 }
 
-.pagination button:disabled {
+.paginacao button:disabled {
   background: #ccc;
   cursor: not-allowed;
 }
@@ -44,7 +44,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .pagination {
+  .paginacao {
     gap: 4px;
   }
 }
